@@ -10,7 +10,7 @@ num1 = set(lista1)
 num2 = set(lista2)
 
 s1 = {10, 20, 30, 40, 50}
-s1.add(7)
+s1.add(7) # Adiciona um item
 
 print(s1)
 

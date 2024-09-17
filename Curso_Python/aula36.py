@@ -1,7 +1,9 @@
 # Dicionarios
     # Utiliza index mo formato de Key e Values
     # Aceita string, integer, float, boolean...
-    
+  
+#Trabalhando com Dicionarios
+#Atualizando itens no dicionario  
     
 aluno = {'nome': 'Ana', 'Idade': 16, 'nota_final': 'A', 'aprovacao': True}
 

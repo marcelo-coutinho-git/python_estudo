@@ -10,5 +10,9 @@
 # print(somar(x))
 
 x =  int(input('digite um numero: '))
-somar10 = lambda x: x + 10 
-print(somar10(x))
+
+def somar(x):
+    func2 = lambda x: x + 10 
+    return func2(x) * 4
+    
+print(somar(x))
