@@ -8,16 +8,14 @@ try:
     print(valor)
 except ValueError:
     print('caracter invalido')
-finally:
-    print('codigo ok')    
+# finally:
+#     print('codigo ok')    
 
-# else: 
-#     print('numero valido')
-#     resultado = valor *2 
-#     print(resultado)
-
-    
-    
+else: 
+    print('numero valido')
+    resultado = valor *2 
+    print(resultado)
+      
 print('mais codigo')
     
     

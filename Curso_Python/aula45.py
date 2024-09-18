@@ -7,15 +7,15 @@
 #======
     # Class: Frutas
     # Objects: Abacate, Banana....
-    
+  
+# criar a classe  
 class Funcionarios:
-    nome      = 'Elena'
-    sobrenome = 'Cabral'
-    data_nasc = '13/11/2023'
-    
+    pass
+
+# criar o Objeto   
 usuario1 = Funcionarios()
 
-print(usuario1.nome)
-print(usuario1.sobrenome)
-print(usuario1.data_nasc)
+# Criar os parametros
+usuario1.nome = 'Elena'
+
 
