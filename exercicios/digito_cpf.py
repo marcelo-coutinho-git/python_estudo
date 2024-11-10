@@ -22,37 +22,31 @@ contrário disso:
 O primeiro dígito do CPF é 7
 """
 
-cpf = [7,4,6,8,2,4,8,9,0]
-mult = [10,9,8,7,6,5,4,3,2]
+cpf = '74682489070'
+nove_digitos = cpf[:9]
+print(nove_digitos)
+contador_regressivo  = 10
 
-#Colete a soma dos 9 primeiros dígitos do CPF, multiplicando cada um dos valores por uma contagem regressiva começando de 10
-valor = [x * y for x, y in zip(cpf, mult)]
-print(valor)
+resultado = 0
 
-# Somar todos os resultados e multioplicar por 10
-valor2 = sum(valor * 10)
-print(valor2)
+for digito in nove_digitos:
+    resultado += (int(digito) * contador_regressivo)
+    contador_regressivo -=1
 
-#Obter o resto da divisão da conta anterior por 11
-resto = valor2 % 11
-print(resto)
+print(resultado)
+
+digito = ((resultado * 10) % 11)
+digito = digito if digito <= 9 else 0
+print(digito)
 
 
-while True:
-    if resto > 9:
-        resultado = 0
+if digito == cpf[0]:
+    print(f'Primeiro digito do CPF, {cpf[0]} é Valido')
                 
-    else:
-        resultado = resto
+else:
+    print(f'Primeiro digito do CPF, {cpf[0]} é Invalido')
         
 
-    if resultado == cpf[0] :
-        print(f'Primeiro digito do CPF, {cpf[0]} é Valido')
-        
-    else:
-        print('invalido')
-
-    break  
     
 
 
